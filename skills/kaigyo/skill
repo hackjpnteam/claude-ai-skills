@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# /kaigyo - 日本語改行最適化スキル
+
+SKILL_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Pythonスクリプトを実行
+python3 "$SKILL_DIR/kaigyo.py" "$@"

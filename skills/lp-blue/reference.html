@@ -1,0 +1,2716 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大人の思春期フェス | OTONA NO SHISHUNKI FES 2026</title>
+<meta name="description" content="【更年期】という概念を壊し、第二の人生が始まるワクワクする時代へ。鈴木紗理奈 企画・主催によるWELLNESS × CULTURE × ENTERTAINMENT フェス。2026年開催予定。">
+<meta property="og:title" content="大人の思春期フェス | OTONA NO SHISHUNKI FES">
+<meta property="og:description" content="今一度、自分の人生に恋して生きる。鈴木紗理奈 企画・主催。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;700;900&family=Yuji+Mai&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #1c4cc7;
+    --blue-dark: #133394;
+    --blue-light: #7aa4ff;
+    --blue-pale: #e8f0ff;
+    --blue-faint: #f4f8ff;
+    --ink: #0d1a3a;
+    --gray: #6a7592;
+    --white: #ffffff;
+    --bg: #fafcff;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.7;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "palt";
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ===== NAV ===== */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 18px 0;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(28, 76, 199, 0.08);
+    transition: all 0.3s;
+  }
+
+  .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-logo {
+    font-family: 'Yuji Mai', 'Noto Sans JP', serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--ink);
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding: 6px 4px 10px;
+    line-height: 1;
+    transition: transform 0.3s;
+  }
+
+  .nav-logo:hover { transform: translateY(-1px); }
+
+  .nav-logo::after {
+    content: '';
+    position: absolute;
+    left: -2%;
+    right: -2%;
+    bottom: 2px;
+    height: 6px;
+    background: var(--blue);
+    border-radius: 50%;
+    transform: rotate(-1.5deg);
+    z-index: -1;
+    opacity: 0.9;
+  }
+
+  .nav-logo small {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    color: var(--blue);
+    margin-left: 10px;
+    vertical-align: middle;
+    padding: 3px 7px;
+    border: 1.2px solid var(--blue);
+    border-radius: 4px;
+    line-height: 1;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--blue); }
+
+  .nav-cta {
+    padding: 10px 22px;
+    background: var(--blue);
+    color: white !important;
+    border-radius: 100px;
+    font-size: 12px !important;
+    letter-spacing: 0.15em !important;
+    transition: all 0.25s;
+  }
+
+  .nav-cta:hover {
+    background: var(--blue-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(28, 76, 199, 0.3);
+  }
+
+  .hamburger { display: none; }
+
+  /* ===== HERO ===== */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 120px 0 80px;
+    background: linear-gradient(180deg, #ffffff 0%, #f4f8ff 100%);
+  }
+
+  .hero-bg-text {
+    position: absolute;
+    right: -5%;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: clamp(200px, 30vw, 400px);
+    color: var(--blue);
+    opacity: 0.04;
+    letter-spacing: -0.05em;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  .hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+
+  .hero-tag {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    color: var(--blue);
+    margin-bottom: 40px;
+    padding: 8px 20px;
+    border: 1.5px solid var(--blue);
+    border-radius: 100px;
+    animation: fadeUp 0.8s ease-out;
+  }
+
+  .hero-title {
+    font-family: 'Yuji Mai', 'Noto Sans JP', serif;
+    font-size: clamp(56px, 10vw, 140px);
+    line-height: 1.05;
+    color: var(--ink);
+    margin-bottom: 24px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    position: relative;
+    animation: fadeUp 0.8s ease-out 0.1s both;
+  }
+
+  .hero-title .highlight {
+    position: relative;
+    display: inline-block;
+    color: var(--ink);
+  }
+
+  .hero-title .highlight svg.brush {
+    position: absolute;
+    left: -6%;
+    right: -6%;
+    bottom: -14%;
+    width: 112%;
+    height: 60%;
+    z-index: -1;
+    overflow: visible;
+  }
+
+  .hero-title .highlight svg.brush path {
+    stroke: var(--blue);
+    stroke-width: 28;
+    stroke-linecap: round;
+    fill: none;
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: drawBrush 1.3s cubic-bezier(0.65, 0, 0.35, 1) 0.9s forwards;
+  }
+
+  @keyframes drawBrush {
+    to { stroke-dashoffset: 0; }
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-sub {
+    font-size: clamp(18px, 2.4vw, 28px);
+    color: var(--blue);
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    margin-bottom: 60px;
+    animation: fadeUp 0.8s ease-out 0.3s both;
+  }
+
+  .hero-meta {
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    animation: fadeUp 0.8s ease-out 0.5s both;
+  }
+
+  .hero-meta-item .label {
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: var(--gray);
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+
+  .hero-meta-item .value {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: 0.05em;
+  }
+
+  .hero-meta-item .value.date {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--blue);
+    letter-spacing: 0.1em;
+    line-height: 1;
+  }
+
+  .hero-cross {
+    display: flex;
+    gap: 20px;
+    margin-top: 60px;
+    align-items: center;
+    font-size: 13px;
+    letter-spacing: 0.25em;
+    font-weight: 700;
+    color: var(--blue);
+    animation: fadeUp 0.8s ease-out 0.7s both;
+  }
+
+  .hero-cross span.x {
+    color: var(--blue-light);
+    font-weight: 300;
+  }
+
+  /* ===== SECTION ===== */
+  section {
+    padding: 140px 0;
+    position: relative;
+  }
+
+  .section-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.4em;
+    color: var(--blue);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .section-label::before {
+    content: '';
+    width: 24px;
+    height: 1px;
+    background: var(--blue);
+  }
+
+  .section-title {
+    font-family: 'Caveat', 'Noto Sans JP', cursive;
+    font-size: clamp(48px, 7vw, 80px);
+    font-weight: 700;
+    color: var(--blue);
+    line-height: 1.1;
+    margin-bottom: 16px;
+    letter-spacing: 0.02em;
+    position: relative;
+    display: inline-block;
+    padding: 12px 28px 12px 24px;
+  }
+
+  .section-title .scribble {
+    position: absolute;
+    inset: -6px -8px -6px -8px;
+    width: calc(100% + 16px);
+    height: calc(100% + 12px);
+    pointer-events: none;
+    z-index: -1;
+    overflow: visible;
+  }
+
+  .section-title .scribble path {
+    stroke: var(--blue);
+    stroke-width: 3.2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    stroke-dasharray: 1600;
+    stroke-dashoffset: 1600;
+    transition: stroke-dashoffset 1.4s cubic-bezier(0.65, 0, 0.35, 1);
+    opacity: 0.85;
+  }
+
+  .reveal.active .section-title .scribble path,
+  .section-title.drawn .scribble path {
+    stroke-dashoffset: 0;
+  }
+
+  .section-subtitle {
+    font-size: clamp(22px, 2.8vw, 32px);
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.5;
+    margin-bottom: 60px;
+    max-width: 700px;
+  }
+
+  /* ===== CONCEPT ===== */
+  .concept {
+    background: white;
+  }
+
+  .concept-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 80px;
+    align-items: start;
+    margin-bottom: 100px;
+  }
+
+  .concept-visual {
+    position: sticky;
+    top: 100px;
+  }
+
+  .concept-image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    aspect-ratio: 4 / 5;
+    box-shadow: 0 20px 60px rgba(28, 76, 199, 0.18);
+  }
+
+  .concept-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .concept-image:hover img { transform: scale(1.04); }
+
+  .concept-image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(13, 26, 58, 0) 40%, rgba(13, 26, 58, 0.55) 100%);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .concept-image-caption {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    z-index: 2;
+    color: white;
+  }
+
+  .concept-image-caption .jp {
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+
+  .concept-image-caption .en {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    font-weight: 700;
+    opacity: 0.85;
+  }
+
+  .concept-text {
+    font-size: 16px;
+    line-height: 2.1;
+    color: var(--ink);
+  }
+
+  .concept-text p {
+    margin-bottom: 20px;
+  }
+
+  .concept-pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .pillar {
+    background: white;
+    border: 1.5px solid var(--blue-pale);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+  }
+
+  .pillar:hover {
+    transform: translateY(-8px);
+    border-color: var(--blue);
+    box-shadow: 0 20px 50px rgba(28, 76, 199, 0.15);
+  }
+
+  .pillar-head {
+    background: var(--blue);
+    color: white;
+    padding: 14px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.25em;
+  }
+
+  .pillar-body {
+    padding: 40px 28px;
+    text-align: center;
+  }
+
+  .pillar-ja {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--blue);
+    margin-bottom: 16px;
+    letter-spacing: 0.1em;
+  }
+
+  .pillar-desc {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--ink);
+  }
+
+  /* ===== TARGET ===== */
+  .target {
+    background: var(--blue-faint);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .target-bg {
+    position: absolute;
+    top: 80px;
+    right: -40px;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(140px, 18vw, 260px);
+    font-weight: 900;
+    color: var(--blue);
+    opacity: 0.06;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    pointer-events: none;
+  }
+
+  .target-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .target-card {
+    background: white;
+    border-radius: 24px;
+    padding: 48px 40px;
+    box-shadow: 0 4px 30px rgba(28, 76, 199, 0.06);
+  }
+
+  .target-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 22px;
+    border-radius: 100px;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    font-weight: 800;
+    margin-bottom: 24px;
+  }
+
+  .target-card.main .target-badge {
+    background: var(--blue);
+    color: white;
+  }
+
+  .target-card.sub .target-badge {
+    background: var(--blue-pale);
+    color: var(--blue);
+  }
+
+  .target-age {
+    font-family: 'Inter', 'Noto Sans JP', sans-serif;
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 800;
+    color: var(--ink);
+    margin-bottom: 32px;
+    letter-spacing: 0.02em;
+  }
+
+  .target-card.main .target-age { color: var(--blue); }
+
+  .target-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .target-list li {
+    background: var(--blue-faint);
+    padding: 18px 24px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+    transition: all 0.25s;
+    border-left: 3px solid transparent;
+  }
+
+  .target-list li:hover {
+    background: var(--blue-pale);
+    border-left-color: var(--blue);
+    padding-left: 28px;
+  }
+
+  /* ===== MARQUEE ===== */
+  .marquee {
+    background: var(--ink);
+    color: white;
+    padding: 28px 0;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .marquee.invert {
+    background: white;
+    color: var(--blue);
+    border-top-color: var(--blue-pale);
+    border-bottom-color: var(--blue-pale);
+  }
+
+  .marquee-track {
+    display: flex;
+    gap: 48px;
+    width: max-content;
+    animation: marqueeScroll 38s linear infinite;
+    will-change: transform;
+  }
+
+  .marquee.reverse .marquee-track {
+    animation-direction: reverse;
+    animation-duration: 46s;
+  }
+
+  .marquee:hover .marquee-track {
+    animation-play-state: paused;
+  }
+
+  .marquee-track span {
+    font-family: 'Yuji Mai', 'Inter', serif;
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .marquee-track span.en {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+  }
+
+  .marquee-track span.dot {
+    color: var(--blue-light);
+    font-size: clamp(22px, 3vw, 36px);
+    opacity: 0.8;
+  }
+
+  .marquee.invert .marquee-track span.dot {
+    color: var(--blue);
+    opacity: 0.4;
+  }
+
+  @keyframes marqueeScroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track { animation: none; }
+  }
+
+  /* ===== SCHEDULE ===== */
+  .schedule {
+    background: linear-gradient(180deg,
+      #eef5ff 0%,
+      #ffffff 18%,
+      #fff6e4 48%,
+      #ffe0c7 72%,
+      #e8d2ea 92%,
+      #cfc4e6 100%);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .schedule::before {
+    content: '';
+    position: absolute;
+    right: -15%;
+    top: 10%;
+    width: 340px;
+    height: 340px;
+    background: radial-gradient(circle, #ffc88a 0%, rgba(255, 200, 138, 0) 70%);
+    border-radius: 50%;
+    opacity: 0.6;
+    filter: blur(20px);
+    pointer-events: none;
+    animation: sunFloat 12s ease-in-out infinite alternate;
+  }
+
+  @keyframes sunFloat {
+    0% { transform: translateY(0) translateX(0); }
+    100% { transform: translateY(40px) translateX(-30px); }
+  }
+
+  .schedule-intro {
+    font-size: clamp(20px, 2.5vw, 26px);
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 60px;
+    max-width: 800px;
+  }
+
+  .timeline {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    position: relative;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #7aa4ff 0%, #1c4cc7 50%, #133394 100%);
+    z-index: 0;
+  }
+
+  .time-block {
+    padding: 0 16px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .time-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    border: 4px solid var(--blue);
+    margin: 0 auto 40px;
+    position: relative;
+    top: 50px;
+    transition: all 0.3s;
+  }
+
+  .time-block:nth-child(1) .time-dot { border-color: #7aa4ff; background: #e6f0ff; }
+  .time-block:nth-child(2) .time-dot { border-color: #ff9c3d; background: #ffe8cc; }
+  .time-block:nth-child(3) .time-dot { border-color: #b355a8; background: #f5d9ea; }
+
+  .time-block:nth-child(1) .time-card { border-color: #cfe0ff; }
+  .time-block:nth-child(2) .time-card { border-color: #ffd9a3; }
+  .time-block:nth-child(3) .time-card { border-color: #e6c8da; }
+
+  .time-block:nth-child(1) .time-when .jp,
+  .time-block:nth-child(1) .time-big,
+  .time-block:nth-child(1) .time-program { color: #2a5cc4; }
+
+  .time-block:nth-child(2) .time-when .jp,
+  .time-block:nth-child(2) .time-big,
+  .time-block:nth-child(2) .time-program { color: #d87420; }
+
+  .time-block:nth-child(3) .time-when .jp,
+  .time-block:nth-child(3) .time-big,
+  .time-block:nth-child(3) .time-program { color: #8e3f91; }
+
+  .time-block:nth-child(1) .time-small { color: #4a7ad4; }
+  .time-block:nth-child(2) .time-small { color: #e08736; }
+  .time-block:nth-child(3) .time-small { color: #a156a4; }
+
+  .timeline::before {
+    background: linear-gradient(90deg, #7aa4ff 0%, #ff9c3d 50%, #b355a8 100%) !important;
+  }
+
+  .time-block:hover .time-dot {
+    transform: scale(1.3);
+  }
+
+  .time-card {
+    background: white;
+    border: 1.5px solid #e5ecfa;
+    border-radius: 20px;
+    padding: 36px 28px;
+    margin-top: 0;
+    transition: all 0.4s;
+    height: 100%;
+  }
+
+  .time-block:hover .time-card {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(28, 76, 199, 0.12);
+    border-color: var(--blue);
+  }
+
+  .time-when {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+
+  .time-when .jp {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--blue);
+  }
+
+  .time-when .en {
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: var(--gray);
+    font-weight: 700;
+  }
+
+  .time-purpose {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--blue-pale);
+  }
+
+  .time-program {
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
+    color: var(--blue);
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+
+  .time-big {
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--ink);
+    margin-bottom: 4px;
+    letter-spacing: 0.1em;
+  }
+
+  .time-small {
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    color: var(--blue);
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+
+  .time-list {
+    list-style: none;
+    font-size: 14px;
+    line-height: 2;
+    color: var(--ink);
+  }
+
+  .time-list li {
+    position: relative;
+    padding-left: 16px;
+  }
+
+  .time-list li::before {
+    content: '・';
+    position: absolute;
+    left: 0;
+    color: var(--blue);
+    font-weight: 900;
+  }
+
+  .time-note {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px dashed #d4dcf0;
+    font-size: 11px;
+    color: var(--gray);
+    line-height: 1.8;
+  }
+
+  /* ===== CONTENTS ===== */
+  .contents {
+    background: var(--blue-faint);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contents-bg {
+    position: absolute;
+    left: -50px;
+    top: 100px;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(150px, 18vw, 280px);
+    font-weight: 900;
+    color: var(--blue);
+    opacity: 0.04;
+    letter-spacing: -0.04em;
+    pointer-events: none;
+    line-height: 1;
+  }
+
+  .contents-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .content-card {
+    background: white;
+    border-radius: 24px;
+    padding: 44px 40px;
+    transition: all 0.4s;
+    position: relative;
+    overflow: hidden;
+    border: 1.5px solid transparent;
+  }
+
+  .content-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 0;
+    background: var(--blue);
+    transition: height 0.4s;
+  }
+
+  .content-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--blue-pale);
+    box-shadow: 0 20px 50px rgba(28, 76, 199, 0.12);
+  }
+
+  .content-card:hover::before {
+    height: 100%;
+  }
+
+  .content-num {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--blue);
+    letter-spacing: 0.25em;
+    margin-bottom: 8px;
+  }
+
+  .content-title {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--ink);
+    margin-bottom: 6px;
+    letter-spacing: 0.02em;
+  }
+
+  .content-sub {
+    font-size: 13px;
+    color: var(--blue);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--blue-pale);
+  }
+
+  .content-list {
+    list-style: none;
+    font-size: 14px;
+    line-height: 2;
+    color: var(--ink);
+  }
+
+  .content-list li {
+    position: relative;
+    padding-left: 18px;
+  }
+
+  .content-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--blue);
+    opacity: 0.4;
+  }
+
+  .content-highlight {
+    margin-top: 20px;
+    padding: 14px 18px;
+    background: var(--blue-pale);
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--blue);
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
+
+  /* ===== OVERVIEW ===== */
+  .overview {
+    background: white;
+    position: relative;
+  }
+
+  .overview-wrap {
+    background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%);
+    border-radius: 32px;
+    padding: 80px 64px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .overview-wrap::before {
+    content: 'OTONA NO SHISHUNKI FES';
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(50px, 7vw, 90px);
+    font-weight: 900;
+    color: white;
+    opacity: 0.06;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    transform: rotate(-3deg);
+  }
+
+  .overview-label {
+    color: white;
+    opacity: 0.9;
+  }
+
+  .overview-label::before {
+    background: white;
+  }
+
+  .overview-title {
+    font-family: 'Caveat', cursive;
+    color: white;
+    margin-bottom: 50px;
+  }
+
+  .overview-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .overview-table th,
+  .overview-table td {
+    text-align: left;
+    padding: 20px 28px;
+  }
+
+  .overview-table th {
+    width: 220px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    border-radius: 12px 0 0 12px;
+  }
+
+  .overview-table td {
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 0 12px 12px 0;
+  }
+
+  .overview-table td .tag {
+    display: inline-block;
+    background: rgba(255, 180, 100, 0.3);
+    color: #ffd4a3;
+    padding: 2px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-left: 10px;
+    letter-spacing: 0.1em;
+  }
+
+  .overview-bottom {
+    margin-top: 48px;
+    padding: 32px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .overview-bottom p {
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 700;
+    line-height: 1.9;
+    color: white;
+    letter-spacing: 0.05em;
+  }
+
+  /* ===== CTA ===== */
+  .cta {
+    background: var(--bg);
+    text-align: center;
+    padding: 160px 0;
+  }
+
+  .cta-title {
+    font-family: 'Yuji Mai', serif;
+    font-size: clamp(40px, 6vw, 72px);
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.3;
+    margin-bottom: 24px;
+  }
+
+  .cta-title .blue { color: var(--blue); }
+
+  .cta-sub {
+    font-size: 16px;
+    color: var(--gray);
+    margin-bottom: 48px;
+    letter-spacing: 0.05em;
+  }
+
+  .cta-btns {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 44px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    transition: all 0.3s;
+    border: 2px solid var(--blue);
+  }
+
+  .btn-primary {
+    background: var(--blue);
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background: var(--blue-dark);
+    border-color: var(--blue-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(28, 76, 199, 0.35);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--blue);
+  }
+
+  .btn-secondary:hover {
+    background: var(--blue);
+    color: white;
+    transform: translateY(-3px);
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--ink);
+    color: white;
+    padding: 80px 0 40px;
+  }
+
+  .footer-main {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 60px;
+  }
+
+  .footer-logo {
+    font-family: 'Caveat', cursive;
+    font-size: 42px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 16px;
+    letter-spacing: 0.02em;
+  }
+
+  .footer-tagline {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.9;
+  }
+
+  .footer-heading {
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    color: var(--blue-light);
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .footer-links {
+    list-style: none;
+  }
+
+  .footer-links li {
+    margin-bottom: 12px;
+  }
+
+  .footer-links a {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover { color: white; }
+
+  .footer-bottom {
+    padding-top: 32px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.1em;
+  }
+
+  /* ===== MOBILE MENU ===== */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    background: white;
+    z-index: 99;
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 24px 40px;
+    overflow-y: auto;
+  }
+
+  .mobile-menu.open { transform: translateX(0); }
+
+  .mobile-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .mobile-menu a {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ink);
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    padding: 10px;
+    transition: color 0.2s;
+  }
+
+  .mobile-menu a:hover,
+  .mobile-menu a:active { color: var(--blue); }
+
+  .mobile-menu .sub {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--gray);
+    letter-spacing: 0.05em;
+    margin-top: 4px;
+  }
+
+  .mobile-menu .cta-mobile {
+    margin-top: 20px;
+    padding: 18px 40px;
+    background: var(--blue);
+    color: white !important;
+    border-radius: 100px;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+  }
+
+  body.menu-open { overflow: hidden; }
+
+  /* ===== MUSIC TOGGLE ===== */
+  .music-toggle {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 150;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: none;
+    background: var(--blue);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(28, 76, 199, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.25s ease,
+                background 0.25s ease;
+    backdrop-filter: blur(10px);
+  }
+
+  .music-toggle:hover {
+    background: var(--blue-dark);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 16px 40px rgba(28, 76, 199, 0.45);
+  }
+
+  .music-toggle:focus-visible {
+    outline: 2px solid var(--blue-light);
+    outline-offset: 4px;
+  }
+
+  .music-toggle .bars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .music-toggle .bars i {
+    display: block;
+    width: 3px;
+    height: 6px;
+    background: white;
+    border-radius: 2px;
+    transition: height 0.2s ease;
+  }
+
+  .music-toggle.playing .bars i {
+    animation: eqBars 0.9s ease-in-out infinite;
+  }
+  .music-toggle.playing .bars i:nth-child(1) { animation-delay: 0s; }
+  .music-toggle.playing .bars i:nth-child(2) { animation-delay: 0.15s; }
+  .music-toggle.playing .bars i:nth-child(3) { animation-delay: 0.3s; }
+  .music-toggle.playing .bars i:nth-child(4) { animation-delay: 0.45s; }
+
+  @keyframes eqBars {
+    0%, 100% { height: 4px; }
+    50% { height: 16px; }
+  }
+
+  .music-toggle::after {
+    content: '';
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    border: 2px solid var(--blue);
+    opacity: 0;
+    animation: musicPing 2.2s ease-out infinite;
+    pointer-events: none;
+  }
+
+  .music-toggle.playing::after { opacity: 0; animation: none; }
+
+  @keyframes musicPing {
+    0% { transform: scale(0.85); opacity: 0.6; }
+    100% { transform: scale(1.3); opacity: 0; }
+  }
+
+  .music-toggle .hint {
+    position: absolute;
+    right: calc(100% + 14px);
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--ink);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 100px;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .music-toggle:not(.playing):not(.user-interacted) .hint {
+    opacity: 1;
+    animation: hintBounce 2.4s ease-in-out infinite;
+  }
+
+  @keyframes hintBounce {
+    0%, 100% { transform: translateY(-50%) translateX(0); }
+    50% { transform: translateY(-50%) translateX(-4px); }
+  }
+
+  @media (max-width: 640px) {
+    .music-toggle {
+      right: 16px;
+      bottom: 16px;
+      width: 50px;
+      height: 50px;
+    }
+    .music-toggle .hint { font-size: 10px; padding: 7px 12px; }
+  }
+
+  /* ===== SCROLL PROGRESS ===== */
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: linear-gradient(90deg, #7aa4ff, var(--blue), #b355a8);
+    z-index: 200;
+    pointer-events: none;
+    transition: width 0.1s linear;
+  }
+
+  /* ===== KEN BURNS ===== */
+  @keyframes kenBurns {
+    0% { transform: scale(1) translate(0, 0); }
+    50% { transform: scale(1.08) translate(-1.5%, -1%); }
+    100% { transform: scale(1.12) translate(1%, -2%); }
+  }
+
+  .concept-image img {
+    animation: kenBurns 40s ease-in-out infinite alternate;
+  }
+
+  /* ===== TAIKO RIPPLE ===== */
+  .taiko-ripple {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .taiko-ripple span {
+    position: absolute;
+    inset: 0;
+    border: 2px solid #b355a8;
+    border-radius: 50%;
+    opacity: 0;
+    animation: taikoPulse 3.2s ease-out infinite;
+  }
+
+  .taiko-ripple span:nth-child(2) { animation-delay: 1s; border-color: #d87420; }
+  .taiko-ripple span:nth-child(3) { animation-delay: 2s; border-color: #8e3f91; }
+
+  @keyframes taikoPulse {
+    0% { transform: scale(0.4); opacity: 0; }
+    20% { opacity: 0.7; }
+    100% { transform: scale(4.5); opacity: 0; }
+  }
+
+  .time-card { position: relative; overflow: hidden; }
+  .time-card > *:not(.taiko-ripple) { position: relative; z-index: 1; }
+
+  /* ===== X ROTATION ===== */
+  .hero-cross span.x {
+    display: inline-block;
+    animation: spinX 10s linear infinite;
+  }
+
+  @keyframes spinX {
+    to { transform: rotate(360deg); }
+  }
+
+  /* ===== PARALLAX HERO BG ===== */
+  .hero-bg-text {
+    will-change: transform;
+    transition: none;
+  }
+
+  /* ===== 3D TILT ===== */
+  .pillar, .content-card {
+    --rx: 0deg;
+    --ry: 0deg;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(0);
+  }
+
+  .pillar:hover {
+    transform: perspective(1000px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(-8px);
+  }
+
+  .content-card:hover {
+    transform: perspective(1000px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(-6px);
+  }
+
+  @media (hover: none) {
+    .pillar, .content-card {
+      transform: none !important;
+    }
+  }
+
+  /* ===== COUNT UP ===== */
+  .count-up {
+    font-variant-numeric: tabular-nums;
+    display: inline-block;
+    min-width: 1ch;
+  }
+
+  /* ===== MEGA TYPE ===== */
+  .mega-type {
+    background: var(--ink);
+    color: white;
+    padding: 180px 0 160px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .mega-type::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 20% 30%, rgba(122, 164, 255, 0.25) 0%, transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(179, 85, 168, 0.2) 0%, transparent 45%);
+    pointer-events: none;
+  }
+
+  .mega-type-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    padding: 0 24px;
+  }
+
+  .mega-type h2 {
+    font-family: 'Yuji Mai', 'Noto Sans JP', serif;
+    font-size: clamp(56px, 15vw, 220px);
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    margin-bottom: 24px;
+    color: white;
+  }
+
+  .mega-type h2 .outline {
+    -webkit-text-stroke: 2px var(--blue-light);
+    color: transparent;
+    display: inline-block;
+    padding: 0 0.05em;
+  }
+
+  .mega-type h2 .em {
+    color: var(--blue-light);
+    display: inline-block;
+  }
+
+  .mega-type .mega-en {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(11px, 1.2vw, 14px);
+    letter-spacing: 0.5em;
+    font-weight: 700;
+    color: var(--blue-light);
+    opacity: 0.8;
+    margin-bottom: 40px;
+    display: block;
+  }
+
+  .mega-type .mega-sub {
+    font-size: clamp(14px, 1.5vw, 18px);
+    letter-spacing: 0.3em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 32px;
+    font-weight: 500;
+  }
+
+  @media (max-width: 640px) {
+    .mega-type { padding: 110px 0 100px; }
+    .mega-type h2 { font-size: clamp(48px, 18vw, 100px); line-height: 1.1; }
+    .mega-type .mega-en { font-size: 10px; letter-spacing: 0.35em; margin-bottom: 24px; }
+    .mega-type .mega-sub { font-size: 13px; letter-spacing: 0.2em; }
+  }
+
+  /* ===== INTRO LOADER ===== */
+  body.intro-active { overflow: hidden; }
+
+  .intro {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: var(--ink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    transition: opacity 0.9s cubic-bezier(0.65, 0, 0.35, 1),
+                transform 0.9s cubic-bezier(0.65, 0, 0.35, 1),
+                clip-path 1s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+
+  .intro.hide {
+    clip-path: inset(0 0 100% 0);
+    pointer-events: none;
+  }
+
+  body:not(.intro-active) .intro { display: none; }
+
+  .intro-bg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .intro-bg::before,
+  .intro-bg::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0;
+    animation: introBlob 3s ease-out forwards;
+  }
+
+  .intro-bg::before {
+    width: 600px;
+    height: 600px;
+    background: var(--blue);
+    top: -200px;
+    left: -200px;
+  }
+
+  .intro-bg::after {
+    width: 500px;
+    height: 500px;
+    background: var(--blue-dark);
+    bottom: -150px;
+    right: -150px;
+    animation-delay: 0.3s;
+  }
+
+  @keyframes introBlob {
+    0% { opacity: 0; transform: scale(0.5); }
+    60% { opacity: 0.5; }
+    100% { opacity: 0.35; transform: scale(1); }
+  }
+
+  .intro-inner {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .intro-tag {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.4em;
+    color: var(--blue-light);
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: introFade 0.8s ease-out 0.2s forwards;
+  }
+
+  @keyframes introFade {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .intro-title {
+    font-family: 'Yuji Mai', 'Noto Sans JP', serif;
+    font-size: clamp(36px, 9vw, 140px);
+    line-height: 1.1;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin-bottom: 0;
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .intro-title .char {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-60px) rotate(-8deg);
+    filter: blur(8px);
+    animation: charDrop 0.7s cubic-bezier(0.2, 1.2, 0.4, 1) forwards;
+  }
+
+  @keyframes charDrop {
+    to {
+      opacity: 1;
+      transform: translateY(0) rotate(0);
+      filter: blur(0);
+    }
+  }
+
+  .intro-underline {
+    display: block;
+    margin: 12px auto 0;
+    max-width: 100%;
+  }
+
+  .intro-underline path {
+    stroke: var(--blue-light);
+    stroke-width: 14;
+    stroke-linecap: round;
+    fill: none;
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
+    animation: drawLine 1s cubic-bezier(0.65, 0, 0.35, 1) 1.3s forwards;
+    filter: drop-shadow(0 4px 16px rgba(122, 164, 255, 0.5));
+  }
+
+  @keyframes drawLine {
+    to { stroke-dashoffset: 0; }
+  }
+
+  .intro-sub {
+    display: block;
+    font-size: clamp(13px, 1.8vw, 20px);
+    color: white;
+    letter-spacing: 0.25em;
+    font-weight: 500;
+    margin-top: 36px;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: introFade 0.8s ease-out 2s forwards;
+  }
+
+  .intro-date {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    color: var(--blue-light);
+    font-weight: 700;
+    margin-top: 20px;
+    opacity: 0;
+    animation: introFade 0.8s ease-out 2.3s forwards;
+  }
+
+  /* reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .intro-title .char,
+    .intro-tag,
+    .intro-sub,
+    .intro-date { animation-duration: 0.01s; animation-delay: 0s; }
+    .intro-underline path { animation-delay: 0.1s; animation-duration: 0.3s; }
+    .intro-bg::before,
+    .intro-bg::after { animation: none; opacity: 0.3; }
+  }
+
+  /* ===== TABLET ===== */
+  @media (max-width: 900px) {
+    .nav-links { display: none; }
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      cursor: pointer;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      z-index: 101;
+      position: relative;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--ink);
+      transition: transform 0.3s, opacity 0.3s;
+      transform-origin: center;
+    }
+    .hamburger.active span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    section { padding: 80px 0; }
+
+    .concept-grid { grid-template-columns: 1fr; gap: 40px; }
+    .concept-pillars { grid-template-columns: 1fr; gap: 16px; }
+
+    .target-grid { grid-template-columns: 1fr; }
+
+    .timeline { grid-template-columns: 1fr; gap: 24px; }
+    .timeline::before { display: none; }
+    .time-dot { top: 0; margin-bottom: 20px; }
+
+    .contents-grid { grid-template-columns: 1fr; gap: 20px; }
+
+    .overview-wrap { padding: 50px 24px; }
+    .overview-table th,
+    .overview-table td { display: block; width: 100%; border-radius: 12px; padding: 14px 20px; }
+    .overview-table th { border-radius: 12px 12px 0 0; margin-top: 8px; }
+    .overview-table td { border-radius: 0 0 12px 12px; }
+
+    .footer-main { grid-template-columns: 1fr; gap: 40px; }
+    .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+
+    .hero-meta { gap: 28px; }
+  }
+
+  /* ===== MOBILE ===== */
+  @media (max-width: 640px) {
+    .container { padding: 0 20px; }
+
+    nav { padding: 12px 0; }
+    .nav-inner { padding: 0 20px; }
+
+    .nav-logo {
+      font-size: 20px;
+      padding: 4px 2px 8px;
+    }
+    .nav-logo::after {
+      height: 5px;
+      bottom: 3px;
+    }
+    .nav-logo small {
+      font-size: 8px;
+      padding: 2px 5px;
+      margin-left: 6px;
+    }
+
+    .hero {
+      min-height: auto;
+      padding: 110px 0 70px;
+    }
+
+    .hero-bg-text {
+      font-size: clamp(160px, 60vw, 240px);
+      right: -10%;
+      opacity: 0.03;
+    }
+
+    .hero-tag {
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      padding: 7px 14px;
+      margin-bottom: 28px;
+    }
+
+    .hero-title {
+      font-size: clamp(56px, 17vw, 80px);
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+
+    .hero-sub {
+      font-size: 15px;
+      letter-spacing: 0.15em;
+      margin-bottom: 40px;
+      line-height: 1.8;
+    }
+
+    .hero-meta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .hero-meta-item .label { font-size: 10px; }
+    .hero-meta-item .value { font-size: 17px; }
+    .hero-meta-item .value.date { font-size: 28px; }
+
+    .hero-cross {
+      margin-top: 40px;
+      gap: 10px;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      flex-wrap: wrap;
+    }
+
+    section { padding: 70px 0; }
+
+    .section-label {
+      font-size: 11px;
+      letter-spacing: 0.3em;
+    }
+
+    .section-title {
+      font-size: 44px;
+      margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+      font-size: 18px;
+      margin-bottom: 40px;
+      line-height: 1.7;
+    }
+
+    .concept-grid { gap: 28px; margin-bottom: 50px; }
+    .concept-text { font-size: 15px; line-height: 2; }
+    .concept-text p { margin-bottom: 16px; }
+    .concept-visual { position: static; top: auto; }
+    .concept-image { aspect-ratio: 4 / 3; border-radius: 18px; }
+    .concept-image-caption { left: 20px; bottom: 20px; }
+    .concept-image-caption .jp { font-size: 17px; }
+    .concept-image-caption .en { font-size: 10px; letter-spacing: 0.25em; }
+
+    .pillar-body { padding: 32px 20px; }
+    .pillar-ja { font-size: 24px; margin-bottom: 12px; }
+    .pillar-desc { font-size: 13px; }
+
+    .target-card { padding: 32px 24px; border-radius: 20px; }
+    .target-badge { font-size: 10px; padding: 8px 16px; }
+    .target-age { font-size: 22px; margin-bottom: 24px; }
+    .target-list li { padding: 14px 18px; font-size: 14px; }
+    .target-list li:hover { padding-left: 22px; }
+
+    .schedule-intro {
+      font-size: 17px;
+      line-height: 1.8;
+      margin-bottom: 44px;
+    }
+
+    .time-card { padding: 28px 22px; border-radius: 18px; }
+    .time-when .jp { font-size: 26px; }
+    .time-when .en { font-size: 10px; }
+    .time-purpose { font-size: 13px; padding-bottom: 16px; margin-bottom: 20px; }
+    .time-program { font-size: 20px; }
+    .time-big { font-size: 40px; }
+    .time-small { font-size: 12px; margin-bottom: 18px; }
+    .time-list { font-size: 13px; line-height: 1.9; }
+    .time-note { font-size: 10px; margin-top: 16px; }
+
+    .content-card { padding: 32px 24px; border-radius: 20px; }
+    .content-num { font-size: 11px; letter-spacing: 0.2em; }
+    .content-title { font-size: 21px; }
+    .content-sub { font-size: 12px; margin-bottom: 18px; padding-bottom: 16px; }
+    .content-list { font-size: 13px; line-height: 1.9; }
+    .content-highlight { font-size: 12px; padding: 12px 14px; }
+
+    .overview-wrap {
+      padding: 40px 20px;
+      border-radius: 20px;
+    }
+    .overview-wrap::before {
+      font-size: 36px;
+      top: 14px;
+    }
+    .overview-table th {
+      font-size: 12px;
+      padding: 12px 18px;
+      letter-spacing: 0.12em;
+    }
+    .overview-table td {
+      font-size: 14px;
+      padding: 14px 18px;
+    }
+    .overview-table td .tag {
+      font-size: 10px;
+      margin-left: 6px;
+      padding: 2px 8px;
+    }
+    .overview-bottom {
+      padding: 24px 18px;
+      margin-top: 32px;
+    }
+    .overview-bottom p {
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    .cta { padding: 100px 0; }
+    .cta-title { font-size: 34px; line-height: 1.4; margin-bottom: 16px; }
+    .cta-sub { font-size: 13px; margin-bottom: 32px; padding: 0 10px; }
+    .cta-btns { flex-direction: column; width: 100%; max-width: 320px; margin: 0 auto; }
+    .btn {
+      padding: 18px 28px;
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      justify-content: center;
+      width: 100%;
+    }
+
+    footer { padding: 60px 0 32px; }
+    .footer-logo { font-size: 28px; }
+    .footer-tagline { font-size: 13px; }
+  }
+
+  @media (max-width: 380px) {
+    .hero-title { font-size: 52px; }
+    .section-title { font-size: 38px; }
+    .time-big { font-size: 34px; }
+    .content-title { font-size: 19px; }
+  }
+
+  @media (hover: none) {
+    .pillar:hover,
+    .content-card:hover,
+    .time-block:hover .time-card,
+    .target-list li:hover {
+      transform: none;
+      box-shadow: none;
+    }
+    .target-list li:hover { padding-left: 24px; }
+  }
+
+  /* ===== SCROLL REVEAL ===== */
+  .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+  }
+
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body class="intro-active">
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<audio id="bgm" src="audio/bgm.mp3" loop preload="auto" playsinline></audio>
+<button class="music-toggle" id="musicToggle" aria-label="BGM再生/停止" aria-pressed="false">
+  <span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+  <span class="hint">♪ BGM</span>
+</button>
+
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro-bg"></div>
+  <div class="intro-inner">
+    <span class="intro-tag">WELLNESS × CULTURE × ENTERTAINMENT</span>
+    <h1 class="intro-title" aria-label="大人の思春期フェス">
+      <span class="char" style="animation-delay:0.5s">大</span><span class="char" style="animation-delay:0.6s">人</span><span class="char" style="animation-delay:0.7s">の</span><span class="char" style="animation-delay:0.8s">思</span><span class="char" style="animation-delay:0.9s">春</span><span class="char" style="animation-delay:1.0s">期</span><span class="char" style="animation-delay:1.1s">フ</span><span class="char" style="animation-delay:1.2s">ェ</span><span class="char" style="animation-delay:1.3s">ス</span>
+    </h1>
+    <svg class="intro-underline" viewBox="0 0 800 40" preserveAspectRatio="none" width="100%" height="28" aria-hidden="true">
+      <path d="M 20 28 Q 200 6 400 20 T 780 16" />
+    </svg>
+    <span class="intro-sub">今一度、自分の人生に恋して生きる。</span>
+    <span class="intro-date">2026 · PRODUCED BY SARINA SUZUKI</span>
+  </div>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">大人の思春期フェス<small>FES 2026</small></a>
+    <ul class="nav-links">
+      <li><a href="#concept">CONCEPT</a></li>
+      <li><a href="#target">TARGET</a></li>
+      <li><a href="#schedule">SCHEDULE</a></li>
+      <li><a href="#contents">CONTENTS</a></li>
+      <li><a href="#overview">EVENT</a></li>
+      <li><a href="#cta" class="nav-cta">CONTACT</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" aria-label="メニュー" role="button" tabindex="0"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <ul>
+    <li><a href="#concept">CONCEPT<span class="sub">コンセプト</span></a></li>
+    <li><a href="#target">TARGET<span class="sub">ターゲット</span></a></li>
+    <li><a href="#schedule">SCHEDULE<span class="sub">1日の流れ</span></a></li>
+    <li><a href="#contents">CONTENTS<span class="sub">コンテンツ</span></a></li>
+    <li><a href="#overview">EVENT<span class="sub">イベント概要</span></a></li>
+    <li><a href="#cta" class="cta-mobile">CONTACT</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-text">SHISHUNKI</div>
+  <div class="hero-inner">
+    <span class="hero-tag">WELLNESS × CULTURE × ENTERTAINMENT</span>
+    <h1 class="hero-title">
+      大人の<span class="highlight">思春期<svg class="brush" viewBox="0 0 300 60" preserveAspectRatio="none"><path d="M 8 42 Q 80 16 160 32 T 292 26" /></svg></span><br>フェス
+    </h1>
+    <p class="hero-sub">今一度、自分の人生に恋して生きる。</p>
+
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <div class="label">DATE</div>
+        <div class="value date">2026.4.17</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="label">PRODUCED BY</div>
+        <div class="value">鈴木 紗理奈</div>
+      </div>
+    </div>
+
+    <div class="hero-cross">
+      <span>WELLNESS</span>
+      <span class="x">×</span>
+      <span>CULTURE</span>
+      <span class="x">×</span>
+      <span>ENTERTAINMENT</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONCEPT -->
+<section id="concept" class="concept">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">CONCEPT</div>
+      <h2 class="section-title">コンセプト<svg class="scribble" viewBox="0 0 400 100" preserveAspectRatio="none" aria-hidden="true"><path d="M 30 50 Q 28 12 200 8 Q 382 4 380 50 Q 378 94 200 96 Q 22 98 32 52" /></svg></h2>
+      <p class="section-subtitle">【更年期】という概念を壊し、<br>第二の人生が始まるワクワクする時代へ。</p>
+    </div>
+
+    <div class="concept-grid reveal">
+      <div class="concept-visual">
+        <div class="concept-image">
+          <img src="images/concept.png" alt="夕日を眺める大人たち" loading="lazy">
+          <div class="concept-image-caption">
+            <span class="jp">第二章のはじまり</span>
+            <span class="en">A NEW CHAPTER</span>
+          </div>
+        </div>
+      </div>
+      <div class="concept-text">
+        <p>年齢を重ね、経験を積み、子育てやキャリア、人間関係。色んなものから解放された後に送る人生こそ、本当の人生のはじまり。</p>
+        <p>「更年期」というネガティブなワードや、これまでの固定観念を壊して、第二章の新しい人生が始まるというワクワクする時期に突入するという、新しい価値観を作る場所。</p>
+        <p>この転換期に悩みを抱えているのは、女性だけではありません。更年期に悩む男性や、気づかずに不調のまま過ごす人も多くいます。今、必要なのは、性別の枠を超えて心と体、価値観のすべてをアップデートすること。</p>
+        <p>ここは、新しい時代を生きる大人のためのウェルネス × カルチャー × エンタメフェス。<strong>ここから、最高に自由な第二章が始まります。</strong></p>
+      </div>
+    </div>
+
+    <div class="concept-pillars reveal">
+      <div class="pillar">
+        <div class="pillar-head">WELLNESS</div>
+        <div class="pillar-body">
+          <div class="pillar-ja">ウェルネス</div>
+          <p class="pillar-desc">心と体を整える<br>専門家との連携</p>
+        </div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-head">CULTURE</div>
+        <div class="pillar-body">
+          <div class="pillar-ja">カルチャー</div>
+          <p class="pillar-desc">価値観をアップデート<br>新しい自分に出会う</p>
+        </div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-head">ENTERTAINMENT</div>
+        <div class="pillar-body">
+          <div class="pillar-ja">エンタメ</div>
+          <p class="pillar-desc">仲間と笑い、泣き、<br>踊り、解放される</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TARGET -->
+<section id="target" class="target">
+  <div class="target-bg">TARGET</div>
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">TARGET</div>
+      <h2 class="section-title">ターゲット<svg class="scribble" viewBox="0 0 400 100" preserveAspectRatio="none" aria-hidden="true"><path d="M 25 50 Q 22 12 200 8 Q 382 4 380 52 Q 378 94 200 96 Q 18 98 28 52 M 36 56 Q 36 20 200 16 Q 372 12 370 54" /></svg></h2>
+    </div>
+
+    <div class="target-grid">
+      <div class="target-card main reveal">
+        <span class="target-badge">● MAIN TARGET</span>
+        <div class="target-age">40代 ～ 60代 女性</div>
+        <ul class="target-list">
+          <li>更年期世代</li>
+          <li>子育て一区切り世代</li>
+          <li>セカンドキャリア模索中</li>
+          <li>自分の人生を見直したい女性</li>
+        </ul>
+      </div>
+      <div class="target-card sub reveal">
+        <span class="target-badge">○ SUB TARGET</span>
+        <div class="target-age">30代後半 女性（プレ更年期）</div>
+        <ul class="target-list">
+          <li>女性経営者・リーダー層</li>
+          <li>ウェルネス関心層</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>WELLNESS</span><span class="dot">✦</span><span>解放</span><span class="dot">✦</span><span>CULTURE</span><span class="dot">✦</span><span>第二章</span><span class="dot">✦</span><span>ENTERTAINMENT</span><span class="dot">✦</span><span>再スタート</span><span class="dot">✦</span><span>新しい価値観</span><span class="dot">✦</span><span>40's 50's 60's</span><span class="dot">✦</span><span>ワクワク</span><span class="dot">✦</span>
+    <span>WELLNESS</span><span class="dot">✦</span><span>解放</span><span class="dot">✦</span><span>CULTURE</span><span class="dot">✦</span><span>第二章</span><span class="dot">✦</span><span>ENTERTAINMENT</span><span class="dot">✦</span><span>再スタート</span><span class="dot">✦</span><span>新しい価値観</span><span class="dot">✦</span><span>40's 50's 60's</span><span class="dot">✦</span><span>ワクワク</span><span class="dot">✦</span>
+  </div>
+</div>
+
+<!-- SCHEDULE -->
+<section id="schedule" class="schedule">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">SCHEDULE</div>
+      <h2 class="section-title">1日の流れ<svg class="scribble" viewBox="0 0 400 100" preserveAspectRatio="none" aria-hidden="true"><path d="M 20 78 Q 80 58 160 78 T 320 78 Q 365 78 380 68" /></svg></h2>
+      <p class="schedule-intro">朝から日没まで、<br>「自分と向き合い、動かし、解放する」1日を体験。</p>
+    </div>
+
+    <div class="timeline">
+      <div class="time-block reveal">
+        <div class="time-dot"></div>
+        <div class="time-card">
+          <div class="time-when"><span class="jp">朝</span><span class="en">MORNING</span></div>
+          <p class="time-purpose">自分と向き合う</p>
+          <div class="time-program">【思春期ヨガ】</div>
+          <div class="time-big">静</div>
+          <div class="time-small">RESET</div>
+          <ul class="time-list">
+            <li>瞑想・ヨガ・呼吸ワーク</li>
+            <li>朝の芝生で瞑想</li>
+            <li>軽いストレッチ</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="time-block reveal">
+        <div class="time-dot"></div>
+        <div class="time-card">
+          <div class="time-when"><span class="jp">昼</span><span class="en">DAYTIME</span></div>
+          <p class="time-purpose">自分を動かす</p>
+          <div class="time-program">【思春期エアロビ】</div>
+          <div class="time-big">動</div>
+          <div class="time-small">ENERGY</div>
+          <ul class="time-list">
+            <li>ブラックミュージックで踊る</li>
+            <li>大人の解放エアロビ</li>
+            <li>80's/90's R&B、HIPHOP、reggae で自分を解放</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="time-block reveal">
+        <div class="time-dot"></div>
+        <div class="time-card">
+          <div class="taiko-ripple" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="time-when"><span class="jp">日没</span><span class="en">SUNSET</span></div>
+          <p class="time-purpose">自分を解放</p>
+          <div class="time-program">【思春期太鼓サークル】</div>
+          <div class="time-big">解放</div>
+          <div class="time-small">CEREMONY</div>
+          <ul class="time-list">
+            <li>カリブのリズムで解放される大人の思春期セレモニー</li>
+            <li>太鼓のリズムでみんなで円になりジャンプ</li>
+          </ul>
+          <div class="time-note">
+            円になる → 仲間・コミュニティ<br>
+            太鼓 → 生命力<br>
+            ジャンプ → 解放・再スタート
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENTS -->
+<section id="contents" class="contents">
+  <div class="contents-bg">CONTENTS</div>
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">CONTENTS</div>
+      <h2 class="section-title">コンテンツ<svg class="scribble" viewBox="0 0 400 100" preserveAspectRatio="none" aria-hidden="true"><path d="M 20 80 Q 100 50 200 78 T 380 72" /></svg></h2>
+      <p class="section-subtitle">4つのゾーンで、心と体と価値観をアップデート。</p>
+    </div>
+
+    <div class="contents-grid">
+      <div class="content-card reveal">
+        <div class="content-num">01 / FOOD</div>
+        <h3 class="content-title">大人の思春期フード</h3>
+        <p class="content-sub">ウェルネスフードマーケット</p>
+        <ul class="content-list">
+          <li>グルテンフリー（米粉パン・スイーツ・パスタ）</li>
+          <li>無添加・オーガニック（お弁当・サラダ・スムージー）</li>
+          <li>発酵系（甘酒・発酵ドリンク・腸活フード）</li>
+          <li>ドリンク（コールドプレスジュース・ハーブティー）</li>
+          <li>ドクター連動のホルモンバランス・腸活フード展開</li>
+        </ul>
+      </div>
+
+      <div class="content-card reveal">
+        <div class="content-num">02 / WELLNESS</div>
+        <h3 class="content-title">体験ゾーン</h3>
+        <p class="content-sub">心と体を整える体験エリア</p>
+        <ul class="content-list">
+          <li>ホルモンバランスチェック</li>
+          <li>漢方相談</li>
+          <li>ヨガ・呼吸法</li>
+          <li>マインドフルネス</li>
+          <li>美容・ヘアケア相談</li>
+          <li>涙活</li>
+        </ul>
+      </div>
+
+      <div class="content-card reveal">
+        <div class="content-num">03 / BEAUTY</div>
+        <h3 class="content-title">美容・ライフスタイルゾーン</h3>
+        <p class="content-sub">外見も内面もアップデート</p>
+        <ul class="content-list">
+          <li>ヘアスタイル相談（薄毛・白髪）</li>
+          <li>ファッション（40代50代向け）</li>
+          <li>メイクアップ</li>
+        </ul>
+      </div>
+
+      <div class="content-card reveal">
+        <div class="content-num">04 / NEW LIFE</div>
+        <h3 class="content-title">新しい人生ゾーン</h3>
+        <p class="content-sub">新しい自分へ踏み出すエリア</p>
+        <ul class="content-list">
+          <li>起業相談</li>
+          <li>セカンドキャリア</li>
+          <li>趣味・コミュニティ</li>
+        </ul>
+        <div class="content-highlight">「主婦のセカンドキャリアサロン」を立ち上げていきたい</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE 2 -->
+<div class="marquee invert reverse" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="en">RESET</span><span class="dot">/</span><span>リセット</span><span class="dot">/</span><span class="en">ENERGY</span><span class="dot">/</span><span>エネルギー</span><span class="dot">/</span><span class="en">CEREMONY</span><span class="dot">/</span><span>解放</span><span class="dot">/</span><span class="en">2026</span><span class="dot">/</span><span>最高に自由な第二章</span><span class="dot">/</span>
+    <span class="en">RESET</span><span class="dot">/</span><span>リセット</span><span class="dot">/</span><span class="en">ENERGY</span><span class="dot">/</span><span>エネルギー</span><span class="dot">/</span><span class="en">CEREMONY</span><span class="dot">/</span><span>解放</span><span class="dot">/</span><span class="en">2026</span><span class="dot">/</span><span>最高に自由な第二章</span><span class="dot">/</span>
+  </div>
+</div>
+
+<!-- OVERVIEW -->
+<section id="overview" class="overview">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">EVENT OVERVIEW</div>
+      <h2 class="section-title" style="color: var(--blue); margin-bottom: 48px;">イベント概要<svg class="scribble" viewBox="0 0 400 100" preserveAspectRatio="none" aria-hidden="true"><path d="M 30 50 Q 28 12 200 8 Q 382 4 380 50 Q 378 94 200 96 Q 22 98 32 52" /></svg></h2>
+    </div>
+
+    <div class="overview-wrap reveal">
+      <table class="overview-table">
+        <tr>
+          <th>イベント名</th>
+          <td>大人の思春期フェス</td>
+        </tr>
+        <tr>
+          <th>企画・主催</th>
+          <td>鈴木 紗理奈</td>
+        </tr>
+        <tr>
+          <th>開催時期</th>
+          <td><span class="count-up" data-count="2026" data-suffix="年 秋 開催予定（日程調整中）">0</span><span class="tag">仮</span></td>
+        </tr>
+        <tr>
+          <th>会場</th>
+          <td>屋外メイン（芝生エリア）＋ 屋内サブ会場 ／ 都内近郊（調整中）<span class="tag">仮</span></td>
+        </tr>
+        <tr>
+          <th>想定来場者数</th>
+          <td><span class="count-up" data-count="500" data-suffix="名">0</span> ～ <span class="count-up" data-count="1000" data-suffix="名" data-comma="1">0</span><span class="tag">仮</span></td>
+        </tr>
+        <tr>
+          <th>入場</th>
+          <td>有料チケット制<span class="tag">仮</span></td>
+        </tr>
+      </table>
+
+      <div class="overview-bottom">
+        <p>
+          大人の思春期を当事者として生きる<br>
+          鈴木 紗理奈 が企画・主催し、<br>
+          歳を重ねる女性への価値観を変えていきます。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta" class="cta">
+  <div class="container">
+    <div class="reveal">
+      <h2 class="cta-title">
+        最高に<span class="blue">自由な</span>第二章を、<br>ここから始めよう。
+      </h2>
+      <p class="cta-sub">最新情報・出展協賛・取材のお問い合わせはこちら</p>
+      <div class="cta-btns">
+        <a href="mailto:team@hackjpn.com" class="btn btn-primary">お問い合わせ →</a>
+        <a href="#overview" class="btn btn-secondary">イベント詳細</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEGA TYPE -->
+<section class="mega-type" aria-label="フェス大型タイポグラフィ">
+  <div class="mega-type-inner">
+    <span class="mega-en">OTONA NO SHISHUNKI FES · 2026</span>
+    <h2>
+      最高に<span class="em">自由な</span><br>
+      <span class="outline">第二章</span>へ。
+    </h2>
+    <p class="mega-sub">WELLNESS × CULTURE × ENTERTAINMENT</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-main">
+      <div>
+        <div class="footer-logo">大人の思春期フェス</div>
+        <p class="footer-tagline">
+          WELLNESS × CULTURE × ENTERTAINMENT<br>
+          今一度、自分の人生に恋して生きる。
+        </p>
+      </div>
+      <div>
+        <div class="footer-heading">EVENT</div>
+        <ul class="footer-links">
+          <li><a href="#concept">コンセプト</a></li>
+          <li><a href="#target">ターゲット</a></li>
+          <li><a href="#schedule">1日の流れ</a></li>
+          <li><a href="#contents">コンテンツ</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">CONTACT</div>
+        <ul class="footer-links">
+          <li><a href="mailto:team@hackjpn.com">お問い合わせ</a></li>
+          <li><a href="#overview">イベント概要</a></li>
+          <li><a href="#cta">出展・協賛</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 OTONA NO SHISHUNKI FES. PRODUCED BY SARINA SUZUKI.</div>
+      <div>All Rights Reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Intro loader
+  (() => {
+    const intro = document.getElementById('intro');
+    if (!intro) return;
+    const total = 3400;
+    let hidden = false;
+
+    const hideIntro = () => {
+      if (hidden) return;
+      hidden = true;
+      intro.classList.add('hide');
+      document.body.classList.remove('intro-active');
+      setTimeout(() => intro.remove(), 1100);
+    };
+
+    setTimeout(hideIntro, total);
+    intro.addEventListener('click', hideIntro);
+  })();
+
+  // Scroll reveal
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('active');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', (e) => {
+      const href = a.getAttribute('href');
+      if (href === '#') return;
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // Nav shadow on scroll
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) {
+      nav.style.boxShadow = '0 4px 30px rgba(28, 76, 199, 0.08)';
+    } else {
+      nav.style.boxShadow = 'none';
+    }
+  });
+
+  // Mobile menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  const toggleMenu = (force) => {
+    const willOpen = force !== undefined ? force : !mobileMenu.classList.contains('open');
+    mobileMenu.classList.toggle('open', willOpen);
+    hamburger.classList.toggle('active', willOpen);
+    document.body.classList.toggle('menu-open', willOpen);
+    mobileMenu.setAttribute('aria-hidden', String(!willOpen));
+  };
+
+  hamburger.addEventListener('click', () => toggleMenu());
+  hamburger.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      toggleMenu();
+    }
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => toggleMenu(false));
+  });
+
+  // Close on resize up
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 900 && mobileMenu.classList.contains('open')) {
+      toggleMenu(false);
+    }
+  });
+
+  // === Music toggle ===
+  (() => {
+    const audio = document.getElementById('bgm');
+    const btn = document.getElementById('musicToggle');
+    if (!audio || !btn) return;
+
+    const targetVol = 0.35;
+    audio.volume = 0;
+
+    const fadeTo = (vol, duration = 800) => {
+      const start = audio.volume;
+      const diff = vol - start;
+      const t0 = performance.now();
+      const step = (now) => {
+        const p = Math.min(1, (now - t0) / duration);
+        audio.volume = Math.max(0, Math.min(1, start + diff * p));
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+
+    const play = async () => {
+      try {
+        await audio.play();
+        fadeTo(targetVol, 900);
+        btn.classList.add('playing', 'user-interacted');
+        btn.setAttribute('aria-pressed', 'true');
+        sessionStorage.setItem('bgm', '1');
+      } catch (e) { /* autoplay blocked */ }
+    };
+
+    const stop = () => {
+      fadeTo(0, 500);
+      setTimeout(() => audio.pause(), 520);
+      btn.classList.remove('playing');
+      btn.classList.add('user-interacted');
+      btn.setAttribute('aria-pressed', 'false');
+      sessionStorage.setItem('bgm', '0');
+    };
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) play(); else stop();
+    });
+
+    // Try resuming if user already enabled before
+    if (sessionStorage.getItem('bgm') === '1') {
+      // Browsers still require gesture, so wait for any interaction
+      const resume = () => {
+        play();
+        document.removeEventListener('click', resume);
+        document.removeEventListener('touchstart', resume);
+        document.removeEventListener('keydown', resume);
+      };
+      document.addEventListener('click', resume, { once: true });
+      document.addEventListener('touchstart', resume, { once: true });
+      document.addEventListener('keydown', resume, { once: true });
+    }
+
+    // Pause audio when tab hidden
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden && !audio.paused) {
+        audio.pause();
+      } else if (!document.hidden && sessionStorage.getItem('bgm') === '1' && audio.paused) {
+        audio.play().catch(() => {});
+      }
+    });
+  })();
+
+  // === Scroll progress bar ===
+  const progressBar = document.getElementById('scrollProgress');
+  const updateProgress = () => {
+    const h = document.documentElement;
+    const scrolled = (h.scrollTop || document.body.scrollTop);
+    const max = (h.scrollHeight - h.clientHeight) || 1;
+    progressBar.style.width = (scrolled / max * 100) + '%';
+  };
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+
+  // === Hero background text parallax ===
+  const heroBg = document.querySelector('.hero-bg-text');
+  if (heroBg) {
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const y = window.scrollY * 0.35;
+          heroBg.style.transform = `translateY(calc(-50% - ${y}px)) rotate(90deg)`;
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+  }
+
+  // === Count-up animation ===
+  const counters = document.querySelectorAll('.count-up');
+  const countObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = parseInt(el.dataset.count, 10);
+      const suffix = el.dataset.suffix || '';
+      const useComma = el.dataset.comma === '1';
+      const duration = 1600;
+      const start = performance.now();
+      const fmt = (n) => useComma ? n.toLocaleString('en-US') : String(n);
+      const tick = (now) => {
+        const p = Math.min(1, (now - start) / duration);
+        const eased = 1 - Math.pow(1 - p, 3);
+        const v = Math.round(target * eased);
+        el.textContent = fmt(v) + suffix;
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+      countObserver.unobserve(el);
+    });
+  }, { threshold: 0.4 });
+  counters.forEach(c => countObserver.observe(c));
+
+  // === Magnetic CTA buttons ===
+  const magneticTargets = document.querySelectorAll('.btn-primary, .nav-cta');
+  magneticTargets.forEach(btn => {
+    btn.addEventListener('mousemove', (e) => {
+      const r = btn.getBoundingClientRect();
+      const x = e.clientX - (r.left + r.width / 2);
+      const y = e.clientY - (r.top + r.height / 2);
+      btn.style.transform = `translate(${x * 0.25}px, ${y * 0.35}px)`;
+    });
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = '';
+    });
+  });
+
+  // === 3D tilt on cards ===
+  const tiltCards = document.querySelectorAll('.pillar, .content-card');
+  const isTouch = window.matchMedia('(hover: none)').matches;
+  if (!isTouch) {
+    tiltCards.forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        card.style.setProperty('--ry', `${x * 10}deg`);
+        card.style.setProperty('--rx', `${-y * 10}deg`);
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.setProperty('--ry', '0deg');
+        card.style.setProperty('--rx', '0deg');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
